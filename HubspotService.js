@@ -22,18 +22,19 @@ const postData ={
                     ]
                 };
 
-const options;
-const authenticationURL = 'https://app.hubspot.com/oauth/authorize';
+
+const userURL = 'https://app.hubspot.com/oauth/authorize?client_id=8f53910a-1eea-4f83-951d-fd2748f680fe&scope=contacts&redirect_uri=https://www.example.com/';
+
+//Get OAuth 2.0 Access Toeken and Refresh Tokens
 const properties = {
-                    clientID: '8f53910a-1eea-4f83-951d-fd2748f680fe', 
-                       scope: 'contacts automation', 
-                redirect_uri:'https://www.example.com/' 
-            }; 
+    grant_type: 'authorization_code',
+    client_id: '',
+    client_secret: '',
+    redirect_uri:'',   
+}
 
-
-options.method = 'GET'; 
-request({
-    url: authenticationURL,
+request.post({
+    url: 'https://api.hubapi.com/oauth/v1/token',
     qs: properties,
     json: true,
     maxAttempts: 5,
