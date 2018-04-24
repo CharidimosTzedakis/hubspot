@@ -16,7 +16,7 @@ const postData ={
                     },
                     {
                         "property": "phonenumber",
-                        "value": "http://updated.example.com"
+                        "value": "6970000000"
                     }
                     ]
                 };
