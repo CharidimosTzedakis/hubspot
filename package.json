@@ -1,0 +1,14 @@
+{
+  "name": "Hubspot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "HubspotService.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "requestretry": "^1.13.0"
+  }
+}
